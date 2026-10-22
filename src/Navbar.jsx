@@ -1,6 +1,6 @@
 import "./Navbar.css"
 
-export default function Navbar() {
+function Navbar() {
     return (
         <header>
             <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 navbar-black">
@@ -118,19 +118,19 @@ export default function Navbar() {
                                 <a className="nav-link" href="#">Ajuda</a>
                             </li>
                         </ul>
-                        <form className="d-flex" role="search">
-                            <button className="btn-affinity" type="button">
-                                <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M12 3v14"></path>
-                                    <path d="M7 12l5 5 5-5"></path>
-                                    <path d="M5 21h14"></path>
-                                </svg>
-                                Obtenha o Affinity
-                            </button>
-                        </form>
+
+                        <button className="btn-affinity" type="button">
+                            <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M12 3v14"></path>
+                                <path d="M7 12l5 5 5-5"></path>
+                                <path d="M5 21h14"></path>
+                            </svg>
+                            Obtenha o Affinity
+                        </button>
                     </div>
                 </div>
             </nav>
         </header>
     )
 }
+export default Navbar

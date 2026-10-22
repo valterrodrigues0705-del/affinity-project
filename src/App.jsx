@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import './App.css'
+// import './App.css'
 import Navbar from './Navbar'
-import Body from './Body'
+import Hero from './Hero'
 import Carrosel from './Carrosel'
 function App() {
   const [count, setCount] = useState(0)
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Body/>
+      <Hero/>
       <Carrosel/>
     </>
   )

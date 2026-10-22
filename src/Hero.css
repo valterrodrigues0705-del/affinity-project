@@ -1,4 +1,16 @@
-.body-section {
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,900&display=swap');
+
+.titulo {
+    font-family: 'bodoni moda', serif;
+    font-size: 80px;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -4px;
+    line-height: 1;
+    color: white;
+}
+
+.hero-section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -11,7 +23,7 @@
     overflow: hidden;
 }
 
-.body-content {
+.hero-content {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -21,7 +33,7 @@
     align-items: center;
 }
 
-.body-title {
+.hero-title {
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -34,26 +46,27 @@
     line-height: 0.95;
     margin-bottom: 28px;
 }
-.titulo{
+
+.titulo {
     display: flex;
     justify-content: center;
     align-items: baseline;
     font-size: 120px;
 }
 
-.body-description {
+.hero-description {
     display: flex;
     justify-content: center;
     align-items: baseline;
     max-width: 600px;
     margin: 0 auto 32px;
     color: #b8b8b8;
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-size: 30px;
     line-height: 1.6;
     white-space: nowrap;
 }
 
-.body-buttons {
+.hero-buttons {
     display: flex;
     justify-content: center;
 
@@ -61,7 +74,7 @@
     flex-wrap: wrap;
 }
 
-.body-cta {
+.hero-cta {
     display: inline-flex;
     align-items: center;
     gap: 14px;
@@ -71,82 +84,34 @@
     border-radius: 12px;
     font-weight: 500;
     text-decoration: none;
-    transition: transform 0.3s, background 0.3s;
 }
-#botao2{
+
+#botao2 {
     background-color: white;
 }
-.body-cta:hover {
+
+.hero-cta:hover {
     background: #8cdb59;
     color: #101810;
 }
-.canvas{
+
+.canvas {
     display: inline-flex;
     align-items: center;
     margin-top: 14px;
     margin-left: 14px;
 }
-.body-visual {
+
+.hero-visual {
     max-width: 1100px;
     margin: 85px auto 0;
     animation: imageReveal 1.3s ease both;
 }
 
-.body-image {
+.hero-image {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 18px;
     object-fit: cover;
-}
-
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes imageReveal {
-    from {
-        opacity: 0;
-        transform: translateY(70px) scale(0.96);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-@media (max-width: 768px) {
-    .body-section {
-        padding: 80px 0 50px;
-    }
-
-    .body-title {
-        font-size: clamp(3.5rem, 13vw, 6rem);
-    }
-
-    .body-visual {
-        margin-top: 55px;
-    }
-
-    .features-intro {
-        padding: 80px 16px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-    .body-content,
-    .body-visual {
-        animation: none;
-    }
 }

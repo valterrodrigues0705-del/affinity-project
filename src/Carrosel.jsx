@@ -26,7 +26,7 @@ const logos = [
     { nome: "notion", imagem: "/logos/notion.png" }
 ]
 
-export default function Carrosel() {
+ function Carrosel() {
     return (
         <section className="carrosel">
             <div className="carrosel-track">
@@ -50,3 +50,4 @@ export default function Carrosel() {
         </section>
     )
 }
+export default Carrosel

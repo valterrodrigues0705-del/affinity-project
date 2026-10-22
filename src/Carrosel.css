@@ -10,7 +10,7 @@
 .carrosel-track {
     display: flex;
     width: max-content;
-    animation: carrosel-scroll 25s linear infinite;
+    animation: carrosel-scroll 32s linear infinite;
 }
 
 .carrosel-group {
@@ -22,10 +22,6 @@
 }
 
 @keyframes carrosel-scroll {
-    from {
-        transform: translateX(0)
-    }
-
     to {
         transform: translateX(-50%)
     }

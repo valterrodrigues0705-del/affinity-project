@@ -1,23 +1,23 @@
-import "./Body.css";
+import "./Hero.css";
 
-export default function Body() {
+function Hero() {
     return (
         <main>
-            <section className="body-section">
+            <section className="hero-section">
                 <div className="container">
-                    <div className="body-content text-center">
-                        <h1 className="body-title">
-                            Crie <p className="titulo">livremente.</p>
+                    <div className="hero-content text-center">
+                        <h1 className="hero-title">
+                            Crie <em className="titulo">livremente.</em>
                         </h1>
 
-                        <p className="body-description">
+                        <p className="hero-description">
                             Design profissional,edição de fotos,e layout de paginas no mesmo app.
                         </p>
-                        <div className="body-buttons">
-                            <a href="#recursos" className="body-cta">
+                        <div className="hero-buttons">
+                            <a href="#recursos" className="hero-cta">
                                 Obtenha para pessoa fisica
                             </a>
-                            <a href="#recursos" className="body-cta" id="botao2">
+                            <a href="#recursos" className="hero-cta" id="botao2">
                                 Adquira para empresas
                             </a>
                         </div>
@@ -26,7 +26,8 @@ export default function Body() {
                 </div>
             </section>
 
-           
+
         </main>
     );
 }
+export default Hero
